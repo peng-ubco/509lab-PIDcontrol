@@ -23,6 +23,11 @@ class Controller:
         pedal = 1.  # Max: 1, Min: -1
         steering = 0.  # Max; 0.8, Min: -0.8
 
+        '''your code starts here'''
+        '''***********************************************'''
+
+        '''***********************************************'''
+
         return [pedal, steering]
 
 run_sim(sim_opt, Controller)
