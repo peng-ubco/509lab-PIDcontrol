@@ -1,4 +1,4 @@
-from sim_toy import run_sim
+from simulator.sim_toy import run_sim
 
 # Simulator scenario settings.
 sim_opt = {}

@@ -4,7 +4,7 @@ import matplotlib.animation as animation
 import matplotlib.gridspec as gridspec
 import matplotlib.patches as mpatches
 import time
-import motion_models
+import simulator.motion_models
 
 # Simulator options.
 sim_opt = {}
