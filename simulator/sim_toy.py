@@ -6,7 +6,7 @@ import matplotlib.gridspec as gridspec
 import matplotlib.animation as animation
 
 
-def motion_model(state, dt, pedal, steering):
+def system_model(state, dt, pedal, steering):
     """
     This function defines how the car moves given the current state (state)
     and the control inputs (pedal, steering).
@@ -60,7 +60,7 @@ def run_sim(sim_opt, Control):
         steering = max(min(steering, 0.8), -0.8)
 
         # Act
-        y = motion_model(state_i[-1], control.dt, pedal, steering)
+        y = system_model(state_i[-1], control.dt, pedal, steering)
 
         # New state
         state_i = np.append(state_i, np.array([y]), axis=0)

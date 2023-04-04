@@ -1,4 +1,4 @@
-def toy_motion_model(prev_state, dt, pedal, steering=0):
+def toy_system_model(prev_state, dt, pedal, steering=0):
     """Get previous state and return the next state"""
     # Motion model of the car's moving
     # The car's previous state: prev_state=[pos_x, pos_y, car_angle, velocity]
@@ -18,7 +18,7 @@ def toy_motion_model(prev_state, dt, pedal, steering=0):
     # Return the new state
     return [pos_x, 0., 0., v]  # 1D case does not require pos_y and car_angle
 
-def motion_model_0(prev_state, dt, v_control, steering=0):
+def system_model_0(prev_state, dt, v_control, steering=0):
     """Get previous state and return the next state"""
     # Motion model of the car's moving
     # The car's previous state: prev_state=[pos_x, pos_y, car_angle, velocity]
@@ -32,7 +32,7 @@ def motion_model_0(prev_state, dt, v_control, steering=0):
     # Return the new state
     return [pos_x, 0, 0, v]  # 1D case does not require pos_y and car_angle
 
-def motion_model_1(prev_state, dt, pedal, steering=0):
+def system_model_1(prev_state, dt, pedal, steering=0):
     """Get previous state and return the next state"""
     # Motion model of the car's moving
     # The car's previous state: prev_state=[pos_x, pos_y, car_angle, velocity]
@@ -51,7 +51,7 @@ def motion_model_1(prev_state, dt, pedal, steering=0):
     # Return the new state
     return [pos_x, 0, 0, v]  # 1D case does not require pos_y and car_angle
 
-def motion_model_2(prev_state, dt, pedal, steering=0):
+def system_model_2(prev_state, dt, pedal, steering=0):
     """Get previous state and return the next state"""
     # Motion model of the car's moving
     # The car's previous state: prev_state=[pos_x, pos_y, car_angle, velocity]
@@ -71,7 +71,7 @@ def motion_model_2(prev_state, dt, pedal, steering=0):
     # Return the new state
     return [pos_x, 0, 0, v]  # 1D case does not require pos_y and car_angle
 
-def motion_model_3(prev_state, dt, pedal, steering=0):
+def system_model_3(prev_state, dt, pedal, steering=0):
     """Get previous state and return the next state"""
     # Motion model of the car's moving
     # The car's previous state: prev_state=[pos_x, pos_y, car_angle, velocity]

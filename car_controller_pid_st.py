@@ -4,14 +4,14 @@ import matplotlib.animation as animation
 import matplotlib.gridspec as gridspec
 import matplotlib.patches as mpatches
 import time
-import simulator.motion_models
+import simulator.system_models
 
 # Simulator options.
 sim_opt = {}
 sim_opt['FIG_SIZE'] = [8, 8]
 
 
-motion_model = motion_models.toy_motion_model
+system_model = system_models.toy_system_model
 
 def run_sim(sim_opt):
     start = time.process_time()
@@ -41,7 +41,7 @@ def run_sim(sim_opt):
        '''***********************************************'''
         u = u_solution
 
-        y = motion_model(state_i[-1], dt, u[0], u[1])
+        y = system_model(state_i[-1], dt, u[0], u[1])
         state_i = np.append(state_i, np.array([y]), axis=0)
 
         u_i = np.append(u_i, np.array([(u[0], u[1])]), axis=0)
